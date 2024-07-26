@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+
+# Vite build output
+dist/
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+
+# macOS
+.DS_Store

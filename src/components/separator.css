@@ -1,0 +1,5 @@
+.separator {
+  border: 0;
+  height: 1px;
+  background-color: #000; /* Color de la línea */
+}
