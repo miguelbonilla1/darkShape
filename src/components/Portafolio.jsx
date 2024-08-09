@@ -1,5 +1,5 @@
 
-import Header from './Header';
+import HeaderPortafolio from './HeaderPortafolio';
 import fondoEstudio from '../images/fondo6.png';
 
 import a from '../images/a.jpg';
@@ -56,15 +56,15 @@ const Portafolio = () => {
 
   return (
     <>
-    <Header />  
+    <HeaderPortafolio />  
       <section className='font-roboto' style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: `url(${fondoEstudio})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="container mx-auto p-4">
         <h1 className="text-gray-200 text-3xl font-bold mb-8 text-center">Portafolio</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {bandas.map((banda, index) => (
-            <div key={index} className="bg-gray-100 rounded-md overflow-hidden">
-              <img src={banda.imagen} alt={banda.nombre} className="w-full h-full object-cover" />
-              <p className="text-center mt-2">{banda.nombre}</p>
+            <div style={{height:'60vh'}} key={index} className="bg-gray-100 rounded-md overflow-hidden">
+              <img style={{height:'60vh'}} src={banda.imagen} alt={banda.nombre} className="w-full h-full object-cover" />
+              
             </div>
           ))}
         </div>

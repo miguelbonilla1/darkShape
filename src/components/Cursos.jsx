@@ -11,7 +11,7 @@ const Cursos = ({ cursos }) => {
     >
       <div className="w-full max-w-screen-xl p-5">
         <div className="text-center mb-5">
-          <h1 className="text-5xl font-bold pb-10 mb-10">Cursos</h1>
+          <h1 className="text-5xl font-bold pb-10 mb-10 ">Cursos</h1>
         </div>
         <div className="text-center lg:text-left mb-5 lg:mb-10">
           <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 mb-5">

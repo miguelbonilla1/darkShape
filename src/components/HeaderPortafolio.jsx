@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import 'typeface-roboto'; // Importa la fuente
 
-const Header = () => {
+const HeaderPortafolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -19,32 +19,32 @@ const Header = () => {
         </Link>
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
           <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
-            <ScrollLink to="home" smooth={true} duration={500}>
+            <Link to={{ pathname: '/', hash: '#home' }} onClick={() => setTimeout(() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Home
-            </ScrollLink>
+            </Link>
           </li>
           <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
-            <ScrollLink to="estudio" smooth={true} duration={500}>
+            <Link to={{ pathname: '/', hash: '#estudio' }} onClick={() => setTimeout(() => document.getElementById('estudio').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Estudio
-            </ScrollLink>
+            </Link>
           </li>
           <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
-            <ScrollLink to="cursos" smooth={true} duration={500}>
+            <Link to={{ pathname: '/', hash: '#cursos' }} onClick={() => setTimeout(() => document.getElementById('cursos').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Cursos
-            </ScrollLink>
+            </Link>
           </li>
           <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
             <Link to="/portafolio">Proyectos</Link>
           </li>
           <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
-            <ScrollLink to="faq" smooth={true} duration={500}>
+            <Link to={{ pathname: '/', hash: '#faq' }} onClick={() => setTimeout(() => document.getElementById('faq').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Faq
-            </ScrollLink>
+            </Link>
           </li>
           <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
-            <ScrollLink to="contact" smooth={true} duration={500}>
+            <Link to={{ pathname: '/', hash: '#contact' }} onClick={() => setTimeout(() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Contacto
-            </ScrollLink>
+            </Link>
           </li>
         </ul>
         <a href="https://wa.me/9591509078" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 mx-4">
@@ -57,18 +57,18 @@ const Header = () => {
         {/* Menú móvil */}
         <div className={`${isMenuOpen ? 'flex' : 'hidden'} absolute top-14 right-0 left-0 mx-3 md:hidden`}>
           <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg py-2 w-full">
-            <ScrollLink to="home" smooth={true} duration={500} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+            <Link to={{ pathname: '/', hash: '#home' }} onClick={() => { setIsMenuOpen(false); setTimeout(() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' }), 100); }} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
               Home
-            </ScrollLink>
+            </Link>
             <Link to="/portafolio" className="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
               Proyectos
             </Link>
-            <ScrollLink to="faq" smooth={true} duration={500} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+            <Link to={{ pathname: '/', hash: '#faq' }} onClick={() => { setIsMenuOpen(false); setTimeout(() => document.getElementById('faq').scrollIntoView({ behavior: 'smooth' }), 100); }} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
               Faq
-            </ScrollLink>
-            <ScrollLink to="contact" smooth={true} duration={500} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+            </Link>
+            <Link to={{ pathname: '/', hash: '#contact' }} onClick={() => { setIsMenuOpen(false); setTimeout(() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }), 100); }} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
               Contacto
-            </ScrollLink>
+            </Link>
           </div>
         </div>
       </nav>
@@ -76,4 +76,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderPortafolio;
