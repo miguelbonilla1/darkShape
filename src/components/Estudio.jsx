@@ -8,20 +8,17 @@ import fotoEstudio4 from '../images/mezcla2.jpg';
 import fotoEstudio5 from '../images/mastering1.jpg';
 
 import { useState } from "react";
-
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 const Estudio = ({ slides }) => {
   let [current, setCurrent] = useState(0);
 
   let previousSlide = () => {
-    if (current === 0) setCurrent(slides.length - 1);
-    else setCurrent(current - 1);
+    setCurrent(current === 0 ? slides.length - 1 : current - 1);
   };
 
   let nextSlide = () => {
-    if (current === slides.length - 1) setCurrent(0);
-    else setCurrent(current + 1);
+    setCurrent(current === slides.length - 1 ? 0 : current + 1);
   };
 
   return (
@@ -36,25 +33,24 @@ const Estudio = ({ slides }) => {
         <div className="flex flex-col md:flex-row items-center w-full p-6">
           <div className="md:w-1/2 mb-5 md:mb-0 md:pr-5">
             <div className="text-center md:text-left">
-              <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 mb-5">
+              <p className=" p-1 text-xl sm:text-2xl lg:text-3xl text-gray-200 mb-5  ">
                 En nuestra página de producción musical, nos enorgullece presentarles
-                una sección dedicada a la creación de servicios de sonidos
-                excepcionales.
+                una sección dedicada a la creación de servicios de sonidos excepcionales.
               </p>
               
-              <div className="flex justify-center space-x-6">
-                <div className="flex items-center justify-center w-40 h-40 bg-black rounded-full">
-                  <h2 className="p-5 text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
+              <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-6 space-y-4">
+                <div className="flex items-center justify-center w-40 h-40 sm:w-32 sm:h-32 bg-black rounded-full">
+                  <h2 className="p-4 text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
                     Grabación de Audio
                   </h2>
                 </div>
-                <div className="flex items-center justify-center w-40 h-40 bg-black rounded-full">
-                  <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
+                <div className="flex items-center justify-center w-40 h-40 sm:w-32 sm:h-32 bg-black rounded-full">
+                  <h2 className=" p-1 text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
                     Mezcla
                   </h2>
                 </div>
-                <div className="flex items-center justify-center w-40 h-40 bg-black rounded-full">
-                  <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
+                <div className="flex items-center justify-center w-40 h-40 sm:w-32 sm:h-32 bg-black rounded-full">
+                  <h2 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
                     Mastering
                   </h2>
                 </div>
