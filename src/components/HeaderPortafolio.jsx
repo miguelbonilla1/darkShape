@@ -47,7 +47,7 @@ const HeaderPortafolio = () => {
             </Link>
           </li>
         </ul>
-        <a href="https://wa.me/9591509078" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 mx-4">
+        <a href="https://wa.me/+56940824538" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 mx-4">
           <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{ color: '#25D366' }} />
         </a>
         <button className="md:hidden text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -77,3 +77,4 @@ const HeaderPortafolio = () => {
 };
 
 export default HeaderPortafolio;
+ 

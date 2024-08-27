@@ -25,37 +25,21 @@ const Estudio = ({ slides }) => {
     <>
       <section
         id="estudio"
-        className="relative flex flex-col justify-center items-center min-h-screen bg-cover bg-center text-white font-roboto"
+        className="relative flex flex-col justify-center items-center min-h-screen max bg-cover bg-center text-white font-roboto"
         style={{ backgroundImage: `url(${fondoEstudio})` }}
       >
-        <h1 className="text-5xl font-bold pb-10 text-gray-200">Estudio</h1>
+   <h1 className="text-4xl sm:text-5xl font-bold text-gray-200   md:mb-6 lg:mb-12">
+  Estudio
+</h1>
 
-        <div className="flex flex-col md:flex-row items-center w-full p-6">
-          <div className="md:w-1/2 mb-5 md:mb-0 md:pr-5">
+
+        <div className="flex flex-col md:flex-row items-start w-full p-4 sm:p-6 md:p-8">
+          <div className="md:w-1/2 mb-4 md:mb-0 md:pr-5">
             <div className="text-center md:text-left">
-              <p className=" p-1 text-xl sm:text-2xl lg:text-3xl text-gray-200 mb-5  ">
+              <p className="pb-5 text-xl sm:text-2xl lg:text-3xl text-gray-200">
                 En nuestra página de producción musical, nos enorgullece presentarles
                 una sección dedicada a la creación de servicios de sonidos excepcionales.
               </p>
-              
-              <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-6 space-y-4">
-                <div className="flex items-center justify-center w-40 h-40 sm:w-32 sm:h-32 bg-black rounded-full">
-                  <h2 className="p-4 text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
-                    Grabación de Audio
-                  </h2>
-                </div>
-                <div className="flex items-center justify-center w-40 h-40 sm:w-32 sm:h-32 bg-black rounded-full">
-                  <h2 className=" p-1 text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
-                    Mezcla
-                  </h2>
-                </div>
-                <div className="flex items-center justify-center w-40 h-40 sm:w-32 sm:h-32 bg-black rounded-full">
-                  <h2 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-200 to-indigo-400 text-transparent bg-clip-text text-center">
-                    Mastering
-                  </h2>
-                </div>
-              </div>
-
             </div>
           </div>
 
