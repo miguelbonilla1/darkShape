@@ -24,22 +24,21 @@ const Estudio = ({ slides }) => {
   return (
     <>
       <section
-        id="estudio"
-        className="relative flex flex-col justify-center items-center min-h-screen max bg-cover bg-center text-white font-roboto"
-        style={{ backgroundImage: `url(${fondoEstudio})` }}
-      >
-   <h1 className="text-4xl sm:text-5xl font-bold text-gray-200   md:mb-6 lg:mb-12">
-  Estudio
-</h1>
+  id="estudio"
+  className="py-11 md:py-11 relative flex flex-col justify-center items-center bg-cover bg-center text-white font-roboto min-h-screen sm:min-h-[90]"
+  style={{ backgroundImage: `url(${fondoEstudio})` }}
+>
+  <h1 className="text-4xl sm:text-5xl font-bold text-gray-200 md:py-5">
+    Estudio
+  </h1>
 
-
-        <div className="flex flex-col md:flex-row items-start w-full p-4 sm:p-6 md:p-8">
+        <div className="flex flex-col md:flex-row items-start w-full p-2 py-5 sm:p-4 md:p-6 lg:mb-6">
           <div className="md:w-1/2 mb-4 md:mb-0 md:pr-5">
             <div className="text-center md:text-left">
-              <p className="pb-5 text-xl sm:text-2xl lg:text-3xl text-gray-200">
-                En nuestra página de producción musical, nos enorgullece presentarles
-                una sección dedicada a la creación de servicios de sonidos excepcionales.
-              </p>
+            <p className="pb-5 py-3 mb-5 text-xl sm:text-3xl lg:text-4xl text-gray-200">
+  En nuestra página de producción musical, nos enorgullece presentarles
+  una sección dedicada a la creación de servicios de sonidos excepcionales.
+</p>
             </div>
           </div>
 
@@ -49,7 +48,7 @@ const Estudio = ({ slides }) => {
               style={{ transform: `translateX(-${current * 100}%)` }}
             >
               {slides.map((s, index) => (
-                <img key={index} src={s} alt={`Slide ${index + 1}`} className="w-full rounded-lg" />
+                <img key={index} src={s} alt={`Slide ${index + 1}`} className=" w-full rounded-lg" />
               ))}
             </div>
 

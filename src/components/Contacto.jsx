@@ -9,7 +9,7 @@ config.autoAddCss = false;
 
 const Contacto = () => {
   return (
-    <section className="font-roboto bg-gray-900 px-6 pt-11 lg:px-8  max-h-screen flex items-center justify-center">
+    <section className="font-roboto bg-gray-900 px-6 pt-11 lg:px-8  min-h-screen flex items-center justify-center">
       <div className="max-w-5xl mx-auto text-center lg:text-left">
         <h2 className="text-4xl font-bold tracking-tight text-gray-100 mb-">Contáctanos para hablar sobre tus proyectos</h2>
         <p className="text-lg leading-8 text-gray-200 mb-10">Ayudamos a tu proyecto musical a tener éxito</p>
