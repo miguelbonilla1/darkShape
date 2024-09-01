@@ -18,17 +18,17 @@ const HeaderPortafolio = () => {
           <span className="text-xl font-bold text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 lg:pl-3"></span>
         </Link>
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#home' }} onClick={() => setTimeout(() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Home
             </Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#estudio' }} onClick={() => setTimeout(() => document.getElementById('estudio').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Estudio
             </Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#cursos' }} onClick={() => setTimeout(() => document.getElementById('cursos').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Cursos
             </Link>

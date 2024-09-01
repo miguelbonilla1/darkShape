@@ -41,7 +41,7 @@ const Contacto = () => {
             <img
               src={fotoFernando}
               alt="Fernando Guerra"
-              className="ml-3 rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[100px] lg:w-[100px] mb-4 lg:mb-0"
+              className="ml-3 rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[140px] lg:w-[140px] mb-4 lg:mb-0"
             />
             <div className=" text-center lg:text-center">
               <div className="text-base font-semibold text-gray-200">Fernando Guerra</div>

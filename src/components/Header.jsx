@@ -18,30 +18,30 @@ const Header = () => {
           <span className="text-xl font-bold text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 lg:pl-3"></span>
         </Link>
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="home" smooth={true} duration={500}>
               Home
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="estudio" smooth={true} duration={500}>
               Estudio
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="cursos" smooth={true} duration={500}>
               Cursos
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to="/portafolio">Proyectos</Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="faq" smooth={true} duration={500}>
               Faq
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="contact" smooth={true} duration={500}>
               Contacto
             </ScrollLink>
