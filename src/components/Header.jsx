@@ -5,18 +5,20 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import darkShapeLogo from '../images/darkshape-logo.png';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import 'typeface-roboto'; //La fuente
+import 'typeface-roboto';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="text-lg font-roboto sticky top-0 z-50 from-gray-900 via-gray-900 to-gray-900 dark:from-gray-via-gray-300 bg-gradient-to-r text-gray-300 dark:text-gray-200 shadow-md" style={{ maxHeight: '13vh' }}>
-      <nav className="container mx-auto p-0 flex items-center lg:pr-10 h-full justify-center">
+    <header className="text-lg font-roboto sticky top-0 z-50 from-gray-900 via-gray-900 to-gray-900 dark:from-gray-900 via-gray-900 to-gray-900 bg-gradient-to-r text-gray-300 dark:text-gray-200 shadow-md" style={{ maxHeight: '13vh' }}>
+      <nav className="container mx-auto px-4 flex items-center justify-between lg:pr-10 h-full">
+        {/* Logo en el lado izquierdo */}
         <Link to="/" className="flex items-center space-x-2 h-full">
           <img src={darkShapeLogo} alt="DarkShapeStudios Logo" className="h-24 w-auto self-center" style={{ filter: 'invert(1)' }} />
-          <span className="text-xl font-bold text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 lg:pl-3"></span>
         </Link>
+
+        {/* Menú para versiones medianas y grandes */}
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
           <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="home" smooth={true} duration={500}>
@@ -47,12 +49,16 @@ const Header = () => {
             </ScrollLink>
           </li>
         </ul>
-        <a href="https://wa.me/+56940824538" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 mx-4">
-          <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{ color: '#25D366' }} />
-        </a>
-        <button className="md:hidden text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <FontAwesomeIcon icon={faBars} />
-        </button>
+
+        {/* Iconos en el lado derecho */}
+        <div className="flex items-center space-x-4">
+          <a href="https://wa.me/+56940824538" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{ color: '#25D366' }} />
+          </a>
+          <button className="md:hidden text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <FontAwesomeIcon icon={faBars} className="text-white" />
+          </button>
+        </div>
 
         {/* Menú móvil */}
         <div className={`${isMenuOpen ? 'flex' : 'hidden'} absolute top-14 right-0 left-0 mx-3 md:hidden`}>

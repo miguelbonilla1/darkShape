@@ -60,7 +60,7 @@ const Faq = () => {
   return (
     <section className=" font-roboto py-20 relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${fondoEstudio2})` }}>
       <div className="bg-white bg-opacity-50 p-8 rounded-lg shadow-lg w-3/5">
-        <h2 className="text-3xl font-roboto mb-6">Preguntas Frecuentes</h2>
+        <h2 className="text-3xl font-roboto mb-6" style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)" }}>Preguntas Frecuentes</h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-200">
