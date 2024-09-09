@@ -23,8 +23,8 @@ const Cursos = ({ cursos }) => {
           </div>
 
           {/* Descripción */}
-          <div className="text-center lg:text-left mb-10">
-            <p className="text-xl sm:text-3xl lg:text-4xl text-gray-200 leading-relaxed">
+          <div className=" mb-10 px-1 pl-5">
+            <p className="text-xl  sm:text-2xl md:text-3xl lg:text-3xl text-gray-200 leading-relaxed px-5">
               En darkshapeStudios tenemos una variedad de cursos que puedes hallar en nuestro grupo privado. Únete para mejorar tu dominio en grabación de audio, mezcla y mastering.
             </p>
           </div>
@@ -34,13 +34,13 @@ const Cursos = ({ cursos }) => {
             {cursos.map((curso, index) => (
               <div
                 key={index}
-                className="bg-gray-900 bg-opacity-75 rounded-lg p-6 shadow-lg w-full md:w-1/3"
+                className="bg-gray-900 bg-opacity-75 rounded-lg p-6 shadow-lg w-full md:w-1/3 px-10"
               >
                 {/* Título del Curso */}
                 <h2 className="text-2xl font-bold mb-4">{curso.nombre}</h2>
 
                 {/* Descripción del Curso */}
-                <p className="text-white font-roboto mb-6">{curso.descripcion}</p>
+                <p className=" text-xl text-gray-200 font-roboto mb-6">{curso.descripcion}</p>
 
                 {/* Botón e Imagen */}
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
