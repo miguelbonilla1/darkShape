@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        bebas: ["Bebas Neue", "cursive"], // Agregamos Bebas Neue para los títulos
+        
       },
     },
   },

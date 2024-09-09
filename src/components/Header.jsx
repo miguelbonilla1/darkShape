@@ -20,30 +20,30 @@ const Header = () => {
 
         {/* Menú para versiones medianas y grandes */}
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className=" text-xxl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="home" smooth={true} duration={500}>
-              Home
+              Inicio
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-xl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="estudio" smooth={true} duration={500}>
               Estudio
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-xl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="cursos" smooth={true} duration={500}>
               Cursos
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
-            <Link to="/portafolio">Proyectos</Link>
+          <li className="text-xl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+            <Link to="/portafolio">Portafolio</Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-xl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="faq" smooth={true} duration={500}>
               Faq
             </ScrollLink>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-xl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="contact" smooth={true} duration={500}>
               Contacto
             </ScrollLink>
@@ -60,19 +60,25 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menú móvil */}
-        <div className={`${isMenuOpen ? 'flex' : 'hidden'} absolute top-14 right-0 left-0 mx-3 md:hidden`}>
-          <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg py-2 w-full">
-            <ScrollLink to="home" smooth={true} duration={500} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-              Home
+        {/* Menú móvil con fondo gris oscuro, líneas divisorias y animación suave */}
+        <div className={`${isMenuOpen ? 'flex' : 'hidden'} absolute top-full right-0 left-0 mx-3 md:hidden transition-all duration-1000 ease-out mt-1 opacity-95`}>
+          <div className="bg-gray-900 shadow-md rounded-lg py-5 w-full text-center">
+            <ScrollLink to="home" smooth={true} duration={500} className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300 border-b border-gray-700">
+              Inicio
             </ScrollLink>
-            <Link to="/portafolio" className="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
-              Proyectos
+            <ScrollLink to="estudio" smooth={true} duration={500} className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300 border-b border-gray-700">
+              Estudio
+            </ScrollLink>
+            <ScrollLink to="cursos" smooth={true} duration={500} className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300 border-b border-gray-700">
+              Cursos
+            </ScrollLink>
+            <Link to="/portafolio" className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300 border-b border-gray-700">
+              Portafolio
             </Link>
-            <ScrollLink to="faq" smooth={true} duration={500} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+            <ScrollLink to="faq" smooth={true} duration={500} className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300 border-b border-gray-700">
               Faq
             </ScrollLink>
-            <ScrollLink to="contact" smooth={true} duration={500} className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300">
+            <ScrollLink to="contact" smooth={true} duration={500} className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300">
               Contacto
             </ScrollLink>
           </div>

@@ -1,8 +1,26 @@
 .separator {
   border: 0;
-  height: 1px;
+  height: 0.5px;
   background-color: #000; /* Color de la línea */
 }
 
 
+.separatorTwo {
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background:linear-gradient(to bottom, #0c193f, #121d3d, #1c254f, #0e192b);
+  z-index: 10;
+  position: relative;
+}
 
+
+
+.hover:scale-105 {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.hover:shadow-lg {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
