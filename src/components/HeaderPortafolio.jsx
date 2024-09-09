@@ -10,7 +10,7 @@ const HeaderPortafolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="text-lg font-roboto sticky top-0 z-50 from-gray-900 via-gray-900 to-gray-900 dark:from-gray-900 via-gray-900 to-gray-900 bg-gradient-to-r text-gray-300 dark:text-gray-200 shadow-md" style={{ maxHeight: '13vh' }}>
+    <header className="text-lg font-roboto sticky top-0 z-50b bg-gray-900 text-gray-300 dark:text-gray-200 shadow-md" style={{ maxHeight: '13vh' }}>
       <nav className="container mx-auto px-4 flex items-center justify-between lg:pr-10 h-full">
         <Link to="/" className="flex items-center space-x-2 h-full">
           <img src={darkShapeLogo} alt="DarkShapeStudios Logo" className="h-24 w-auto self-center" style={{ filter: 'invert(1)' }} />
