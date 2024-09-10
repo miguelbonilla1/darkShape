@@ -63,12 +63,12 @@ const Faq = () => {
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-200">
               <button className="w-full flex justify-between items-center py-3 focus:outline-none transition-all duration-300 ease-in-out" onClick={() => toggleAccordion(index)}>
-                <span className="font-roboto text-lg font-medium">{faq.question}</span>
+                <span className="font-roboto text-xl font-roboto">{faq.question}</span>
                 <span className="font-roboto text-gray-900">{activeIndex === index ? '▲' : '▼'}</span>
               </button>
               {activeIndex === index && (
                 <div className="py-3 transition-all duration-500 ease-in-out">
-                  <p className="font-roboto text-gray-900">{faq.answer}</p>
+                  <p className=" text-lg font-roboto text-gray-900">{faq.answer}</p>
                 </div>
               )}
             </div>

@@ -12,25 +12,25 @@ const Contacto = () => {
     <section className="font-roboto bg-gray-900 px-6 pt-11 lg:px-8  min-h-screen flex items-center justify-center">
       <div className="max-w-5xl mx-auto text-center lg:text-left">
         <h2 className="text-4xl font-bold tracking-tight text-gray-100 mb-">Contáctanos para hablar sobre tus proyectos</h2>
-        <p className="text-lg leading-8 text-gray-200 mb-10">Ayudamos a tu proyecto musical a tener éxito</p>
+        <p className="text-lg leading-8 text-gray-200 mb-10 ml-1">Ayudamos a tu proyecto musical a tener éxito</p>
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="flex flex-col items-center lg:items-center lg:flex-1 lg:justify-center">
             <div className="text-center lg:text-left">
-              <p className="text-2xl font-semibold text-gray-100 mb-6">Dirección</p>
+              <p className="text-2xl font-semibold text-gray-100 mb-2">Dirección</p>
               <p className="text-lg text-gray-200 mb-6">Carmen 159, Santiago, Chile</p>
               <div className="flex justify-center lg:justify-center space-x-6">
                 <a href="https://www.instagram.com/darkshapestudios/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
                   <FontAwesomeIcon icon={faInstagram} size="3x" />
                 </a>
 
-                
+
                 <a href="https://www.facebook.com/fernandowarmusic" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
                   <FontAwesomeIcon icon={faFacebook} size="3x" />
                 </a>
                 <a href="https://www.tiktok.com/@darkshapestudios" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
                   <FontAwesomeIcon icon={faTiktok} size="3x" />
                 </a>
-                
+
                 <a href="https://wa.me/+56940824538" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
                   <FontAwesomeIcon icon={faWhatsapp} size="3x" />
                 </a>
