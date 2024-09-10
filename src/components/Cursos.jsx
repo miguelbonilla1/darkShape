@@ -34,13 +34,13 @@ const Cursos = ({ cursos }) => {
             {cursos.map((curso, index) => (
               <div
                 key={index}
-                className="bg-gray-900 bg-opacity-75 rounded-lg p-6 shadow-lg w-full md:w-1/3 px-10"
+                className="bg-gray-900 bg-opacity-75 rounded-lg p-6  shadow-lg w-full md:w-1/3 px-10"
               >
                 {/* Título del Curso */}
-                <h2 className="text-2xl font-bold mb-4">{curso.nombre}</h2>
+                <h2 className=" pl-3 text-2xl font-bold mb-4">{curso.nombre}</h2>
 
                 {/* Descripción del Curso */}
-                <p className=" text-xl text-gray-200 font-roboto mb-6">{curso.descripcion}</p>
+                <p className=" pl-3 text-xl text-gray-200 font-roboto mb-6">{curso.descripcion}</p>
 
                 {/* Botón e Imagen */}
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
