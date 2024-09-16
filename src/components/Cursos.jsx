@@ -40,7 +40,7 @@ const Cursos = ({ cursos }) => {
                 <h2 className="text-2xl font-bold mb-4 text-center md:text-left">{curso.nombre}</h2>
 
                 {/* Descripción del Curso */}
-                <p className="text-lg text-gray-200 font-roboto mb-6 text-center md:text-left">{curso.descripcion}</p>
+                <p className="text-xl text-gray-200 font-roboto mb-6 text-center md:text-left">{curso.descripcion}</p>
 
                 {/* Botón e Imagen */}
                 <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between space-y-4 sm:space-y-0 px-11">
