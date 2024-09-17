@@ -23,7 +23,7 @@ const Cursos = ({ cursos }) => {
           </div>
 
           {/* Descripción */}
-          <div className="mb-12 px-4 md:px-12 lg:px-11 lg:ml-10">
+          <div className="w-full mb-12 px-4 md:px-12 lg:px-11 lg:ml-10">
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-3xl text-gray-200 leading-relaxed sm:text-center md:text-left px-3 sm:px-0 pl-3">
               En Dark Shape Studios tenemos una variedad de cursos que puedes hallar en nuestro grupo privado. Únete para mejorar tu dominio en grabación de audio, mezcla y mastering.
             </p>
