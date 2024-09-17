@@ -7,7 +7,7 @@ const Cursos = ({ cursos }) => {
     <>
       <section
         id="cursos"
-        className="w-full relative flex flex-col justify-center items-center min-h-screen bg-cover bg-center text-white font-roboto"
+        className=" pl-2 w-full relative flex flex-col justify-center items-center min-h-screen bg-cover bg-center text-white font-roboto"
         style={{ backgroundImage: `url(${fondoEstudio})` }}
       >
         {/* Overlay semitransparente */}
@@ -23,7 +23,7 @@ const Cursos = ({ cursos }) => {
           </div>
 
           {/* Descripción */}
-          <div className="w-full mb-12 px-4 md:px-12 lg:px-11 lg:ml-10">
+          <div className="pl-10 w-full mb-12 px-4 md:px-12 lg:px-11 lg:ml-10">
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-3xl text-gray-200 leading-relaxed sm:text-center md:text-left px-3 sm:px-0 pl-3">
               En Dark Shape Studios tenemos una variedad de cursos que puedes hallar en nuestro grupo privado. Únete para mejorar tu dominio en grabación de audio, mezcla y mastering.
             </p>
