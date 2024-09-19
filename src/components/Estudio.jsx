@@ -27,7 +27,7 @@ const Estudio = ({ slides }) => {
         style={{ backgroundImage: `url(${fondoEstudio})` }}
       >
         {/* Overlay semitransparente */}
-        <div className="justify-center absolute inset-0 bg-black opacity-30"></div>
+        <div className=" absolute inset-0 bg-black opacity-30"></div>
 
         {/* Título */}
         <h1
@@ -37,7 +37,7 @@ const Estudio = ({ slides }) => {
           Estudio
         </h1>
 
-        <div className="relative z-10 flex flex-col items-center md:flex-row md:items-start w-full p-2 py-5 sm:p-4 md:p-6 lg:mb-6">
+        <div className="justify-center relative z-10 flex flex-col items-center md:flex-row md:items-start w-full p-2 py-5 sm:p-4 md:p-6 lg:mb-6">
           {/* Texto de descripción */}
           <div className="  md:w-1/2 mb-4 md:mb-0 md:pr-5 lg:max-w-xl lg:ml-11 ">
             <div className=" pl-4 pt-2 flex items-center justify-center h-full bg-gray-900 bg-opacity-75 shadow-lg rounded-lg w-full">
