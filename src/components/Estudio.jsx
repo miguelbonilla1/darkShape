@@ -27,7 +27,7 @@ const Estudio = ({ slides }) => {
         style={{ backgroundImage: `url(${fondoEstudio})` }}
       >
         {/* Overlay semitransparente */}
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="justify-center absolute inset-0 bg-black opacity-30"></div>
 
         {/* Título */}
         <h1
