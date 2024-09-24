@@ -20,17 +20,17 @@ const Header = () => {
 
         {/* Menú para versiones medianas y grandes */}
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
-          <li className=" text-xxl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className=" text-xxl text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="home" smooth={true} duration={500}>
               Inicio
             </ScrollLink>
           </li>
-          <li className="text-xl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-xl text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="estudio" smooth={true} duration={500}>
               Estudio
             </ScrollLink>
           </li>
-          <li className="text-xl text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-xl text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="cursos" smooth={true} duration={500}>
               Cursos
             </ScrollLink>
@@ -55,7 +55,7 @@ const Header = () => {
           <a href="https://wa.me/+56940824538" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 mr-3">
             <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{ color: '#25D366' }} />
           </a>
-          <button className="md:hidden  text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden  text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <FontAwesomeIcon icon={faBars} className="w-10 h-6 text-white" />
           </button>
         </div>

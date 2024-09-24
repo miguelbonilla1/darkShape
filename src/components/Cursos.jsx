@@ -23,7 +23,7 @@ const Cursos = ({ cursos }) => {
           </div>
 
           {/* Descripción */}
-          <div className="pl-10 w-full mb-12 px-4 md:px-12 lg:px-11 lg:ml-10">
+          <div className="pl-10 w-full mb-12 px-4 md:px-12 lg:px-11 lg:ml-10 ">
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-3xl text-gray-200 leading-relaxed sm:text-center md:text-left px-3 sm:px-0 pl-3">
               En Dark Shape Studios tenemos una variedad de cursos que puedes hallar en nuestro grupo privado. Únete para mejorar tu dominio en grabación de audio, mezcla y mastering.
             </p>
@@ -37,10 +37,10 @@ const Cursos = ({ cursos }) => {
                 className="bg-gray-900 bg-opacity-75 rounded-lg p-6 shadow-lg w-full md:w-5/12 lg:w-1/3"
               >
                 {/* Título del Curso */}
-                <h2 className="text-2xl font-bold mb-4 text-center md:text-left">{curso.nombre}</h2>
+                <h2 className="text-2xl font-bold mb-4 text-center md:text-left pl-5">{curso.nombre}</h2>
 
                 {/* Descripción del Curso */}
-                <p className="text-xl text-gray-200 font-roboto mb-6 text-center md:text-left">{curso.descripcion}</p>
+                <p className="text-xl text-gray-200 font-roboto mb-6 text-center md:text-left pl-5">{curso.descripcion}</p>
 
                 {/* Botón e Imagen */}
                 <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between space-y-4 sm:space-y-0 px-11">
@@ -48,7 +48,7 @@ const Cursos = ({ cursos }) => {
                     Inscríbete
                   </button>
                   <img
-                    className="sm:ml-4 mt-2 sm:mt-0"
+                    className="sm:ml-4 mt-2 sm:mt-0 transform hover:rotate-12 transition duration-300"
                     style={{ height: "100px", width: "100px", filter: "brightness(0) invert(1)" }}
                     src={manito}
                     alt="Manito"

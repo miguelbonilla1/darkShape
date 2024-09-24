@@ -19,30 +19,30 @@ const HeaderPortafolio = () => {
 
         {/* Menú para versiones medianas y grandes */}
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#home' }} onClick={() => setTimeout(() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Inicio
             </Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#estudio' }} onClick={() => setTimeout(() => document.getElementById('estudio').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Estudio
             </Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#cursos' }} onClick={() => setTimeout(() => document.getElementById('cursos').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Cursos
             </Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300">
             <Link to="/portafolio">Portafolio</Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300">
             <Link to={{ pathname: '/', hash: '#faq' }} onClick={() => setTimeout(() => document.getElementById('faq').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Faq
             </Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition duration-300">
+          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300">
             <Link to={{ pathname: '/', hash: '#contact' }} onClick={() => setTimeout(() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Contacto
             </Link>

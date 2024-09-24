@@ -41,7 +41,7 @@ const Estudio = ({ slides }) => {
           {/* Texto de descripción */}
           <div className="  md:w-1/2 mb-4 md:mb-0 md:pr-5 lg:max-w-xl lg:ml-11 ">
             <div className=" pl-4 pt-2 flex items-center justify-center h-full bg-gray-900 bg-opacity-75 shadow-lg rounded-lg w-full">
-              <p className="px-5 py-4 mb-5 text-xl sm:text-2xl md:text-3xl lg:text-3xl text-gray-200 leading-relaxed pl-2">
+              <p className="px-5 py-4 mb-5 text-xl sm:text-2xl md:text-3xl lg:text-3xl text-gray-200 leading-relaxed pl-3">
                 En nuestra página de producción musical, nos enorgullece presentarles una sección dedicada a la creación de servicios de sonidos excepcionales.
               </p>
 
