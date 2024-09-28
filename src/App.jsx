@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Home from './components/Home'
 import Estudio from './components/Estudio'
-import Cursos from './components/Cursos'
+// import Cursos from './components/Cursos'
 import Faq from './components/Faq'
 import Contacto from './components/Contacto'
 import Portafolio from './components/Portafolio'
@@ -12,29 +12,29 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 
 function App() {
   return (
-       <>
+    <>
       <Header />
 
       <div id="home">
-      <Home />
+        <Home />
       </div>
       <div id="estudio">
-      <Estudio />
-         </div>
-  
-        <div id="cursos">
-      <Cursos />
+        <Estudio />
       </div>
-      
+
+      {/* <div id="cursos">
+      <Cursos />
+      </div> */}
+
       <div id="faq">
-      <Faq />
+        <Faq />
       </div>
       <div id="contact">
-      <Contacto />
+        <Contacto />
       </div>
-      </>   
-      
-   
+    </>
+
+
   );
 }
 

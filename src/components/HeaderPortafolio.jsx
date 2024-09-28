@@ -29,11 +29,11 @@ const HeaderPortafolio = () => {
               Estudio
             </Link>
           </li>
-          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          {/* <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#cursos' }} onClick={() => setTimeout(() => document.getElementById('cursos').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Cursos
-            </Link>
-          </li>
+            </Link> 
+        </li> */}
           <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300">
             <Link to="/portafolio">Portafolio</Link>
           </li>
@@ -76,7 +76,7 @@ const HeaderPortafolio = () => {
           </div>
         </div>
       </nav>
-    </header>
+    </header >
   );
 };
 
