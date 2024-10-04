@@ -41,7 +41,7 @@ const Contacto = () => {
           <img
   src={fotoFernando}
   alt="Fernando Guerra"
-  className="ml-3 rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[140px] lg:w-[140px] mb-4 lg:mb-0 border border-white shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
+  className="ml-3 rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[140px] lg:w-[140px] mb-4 lg:mb-0 border-2 border-white shadow-2xl"
 />
 
 
