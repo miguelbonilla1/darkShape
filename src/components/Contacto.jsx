@@ -1,5 +1,5 @@
 import React from 'react';
-import fotoFernando from '../images/fernando.jpg';
+import fotoFernando from '../images/foto-fernando-recortada.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTwitter, faLinkedin, faTiktok, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -38,14 +38,16 @@ const Contacto = () => {
             </div>
           </div>
           <div className="mb-5 flex flex-col items-center lg:items-center lg:flex-1 lg:justify-center">
-            <img
-              src={fotoFernando}
-              alt="Fernando Guerra"
-              className="ml-3 rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[140px] lg:w-[140px] mb-4 lg:mb-0"
-            />
+          <img
+  src={fotoFernando}
+  alt="Fernando Guerra"
+  className="ml-3 rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[140px] lg:w-[140px] mb-4 lg:mb-0 border border-white shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
+/>
+
+
             <div className=" text-center lg:text-center">
-              <div className="text-base font-semibold text-gray-200">Fernando Guerra</div>
-              <div className="text-sm leading-6 text-gray-200">CEO de DarkshapeStudios</div>
+              <div className="pt-2 text-base font-semibold text-gray-200">Fernando Guerra</div>
+              <div className=" mb-2 text-sm leading-6 text-gray-200">CEO de DarkshapeStudios</div>
             </div>
           </div>
         </div>
