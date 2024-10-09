@@ -9,13 +9,13 @@ import { useState } from "react";
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 const Estudio = ({ slides }) => {
-  let [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
 
-  let previousSlide = () => {
+  const previousSlide = () => {
     setCurrent(current === 0 ? slides.length - 1 : current - 1);
   };
 
-  let nextSlide = () => {
+  const nextSlide = () => {
     setCurrent(current === slides.length - 1 ? 0 : current + 1);
   };
 
@@ -27,11 +27,11 @@ const Estudio = ({ slides }) => {
         style={{ backgroundImage: `url(${fondoEstudio})` }}
       >
         {/* Overlay semitransparente */}
-        <div className=" absolute inset-0 bg-black opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
 
         {/* Título */}
         <h1
-          className="relative z-10 text-4xl sm:text-5xl text-gray-200  text-center drop-shadow-lg md:pb-4 font-bold"
+          className="relative z-10 text-4xl sm:text-5xl text-gray-200 text-center drop-shadow-lg md:pb-4 font-bold"
           style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)" }}
         >
           Estudio
@@ -39,21 +39,22 @@ const Estudio = ({ slides }) => {
 
         <div className="justify-center relative z-10 flex flex-col items-center md:flex-row md:items-start w-full p-2 py-5 sm:p-4 md:p-6 lg:mb-6">
           {/* Texto de descripción */}
-          <div className="  md:w-1/2 mb-4 md:mb-0 md:pr-5 lg:max-w-xl lg:ml-11 ">
-            <div className=" pl-4 pt-2 flex items-center justify-center h-full bg-gray-900 bg-opacity-75 shadow-lg rounded-lg w-full">
+          <div className="md:w-1/2 mb-4 md:mb-0 md:pr-5 lg:max-w-xl lg:ml-11">
+            <div className="pl-4 pt-2 flex items-center justify-center h-full bg-gray-900 bg-opacity-75 shadow-lg rounded-lg w-full">
               <p className="px-5 py-4 mb-5 text-xl sm:text-2xl md:text-3xl lg:text-3xl text-gray-200 leading-relaxed pl-3">
                 En nuestra página de producción musical, nos enorgullece presentarles una sección dedicada a la creación de servicios de sonidos excepcionales.
               </p>
-
             </div>
           </div>
-
 
           {/* Carrusel de imágenes */}
           <div className="relative md:w-1/2 max-w-4xl w-full overflow-hidden rounded-lg shadow-2xl lg:ml-10">
             <div
               className="flex transition-transform ease-in-out duration-700"
-              style={{ transform: `translateX(-${current * 100}%)` }}
+              style={{
+                transform: `translateX(-${current * 100}%)`,
+                willChange: 'transform', // Optimización para navegadores
+              }}
             >
               {slides.map((s, index) => (
                 <img
@@ -61,6 +62,7 @@ const Estudio = ({ slides }) => {
                   src={s}
                   alt={`Slide ${index + 1}`}
                   className="w-full rounded-lg transition-transform duration-500 hover:scale-105 hover:shadow-lg"
+                  style={{ flexShrink: 0, width: '100%' }} // Garantiza que las imágenes no se encogen
                 />
               ))}
             </div>
