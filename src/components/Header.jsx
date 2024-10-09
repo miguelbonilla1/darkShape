@@ -40,7 +40,7 @@ const Header = () => {
           </li>
           <li className="text-xl text-white dark:text-white hover:text-purple-500 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <ScrollLink to="faq" smooth={true} duration={500}>
-              Faq
+              FAQs
             </ScrollLink>
           </li>
           <li className="text-xl text-white dark:text-white hover:text-purple-500 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
@@ -76,7 +76,7 @@ const Header = () => {
               Portafolio
             </Link>
             <ScrollLink to="faq" smooth={true} duration={500} className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300 border-b border-gray-700">
-              Faq
+              FAQs
             </ScrollLink>
             <ScrollLink to="contact" smooth={true} duration={500} className="block px-5 py-3 text-gray-100 hover:bg-gray-800 transition duration-300">
               Contacto
