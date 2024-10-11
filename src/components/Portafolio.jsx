@@ -59,7 +59,7 @@ const Portafolio = () => {
     <HeaderPortafolio />  
       <section className='font-roboto' style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: `url(${fondoEstudio})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="container mx-auto p-4">
-        <h1 className="text-gray-200 text-3xl font-bold mb-8 text-center">Portafolio</h1>
+        <h1 className="text-gray-200 text-4xl font-bold mb-8 text-center">Portafolio</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {bandas.map((banda, index) => (
             <div style={{height:'360px'}} key={index} className="bg-gray-100 rounded-md overflow-hidden">

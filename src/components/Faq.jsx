@@ -58,7 +58,7 @@ const Faq = () => {
   return (
     <section className="font-roboto py-20 relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${fondoEstudio2})` }}>
       <div className="bg-white bg-opacity-50 p-4 sm:p-6 rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto sm:px-6 md:px-12">
-        <h2 className="text-3xl md:text-4xl font-roboto mb-6" style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)" }}>Preguntas Frecuentes</h2>
+        <h1 className="text-4xl md:text-4xl font-roboto mb-6" style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)" }}>Preguntas Frecuentes</h1>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-200">

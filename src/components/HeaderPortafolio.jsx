@@ -10,7 +10,7 @@ const HeaderPortafolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="text-lg font-roboto sticky top-0 z-50b bg-gray-900 text-gray-300 dark:text-gray-200 shadow-md" style={{ maxHeight: '13vh' }}>
+    <header className="text-2xl font-roboto sticky top-0 z-50b bg-gray-900 text-gray-300 dark:text-gray-200 shadow-md" style={{ maxHeight: '13vh' }}>
       <nav className="container mx-auto px-4 flex items-center justify-between lg:pr-10 h-full">
         <Link to="/" className="flex items-center space-x-2 h-full">
           <img src={darkShapeLogo} alt="DarkShapeStudios Logo" className="h-24 w-auto self-center" style={{ filter: 'invert(1)' }} />
@@ -19,7 +19,7 @@ const HeaderPortafolio = () => {
 
         {/* Menú para versiones medianas y grandes */}
         <ul className="hidden md:flex items-center space-x-4 h-full flex-grow justify-center">
-          <li className="text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
+          <li className="  text:2xl text-white dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 cursor-pointer">
             <Link to={{ pathname: '/', hash: '#home' }} onClick={() => setTimeout(() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' }), 100)}>
               Inicio
             </Link>
